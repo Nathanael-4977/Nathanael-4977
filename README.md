@@ -52,7 +52,6 @@ Instead of a chaotic wall of badges, here is my organized toolbox:
 | **[DeforestAI](#)** | Used satellite imagery and Kaggle datasets to detect deforestation in real-time. | `Python` `TensorFlow` `PyTorch` | ⚠️ *Code lost to the void, but trust me, the accuracy was great.* |
 | **[Support-Bot Overlord](#)** | Automated customer support workflow for e-commerce. Built a bot to talk to humans so humans don't have to. | `n8n` `AI` `Automation` | 🟢 Completed |
 | **[Centria Web Dev](#)** | Various web applications forged in the dark, cold winters of my Finnish Erasmus exchange. | `JS` `React` `Node` | 🟢 Completed |
-| **[IntelliWood](#)** | IoT monitoring and management system for wood granule heating and storage. | `C` `IoT` | 🟢 Active |
 
 ---
 
