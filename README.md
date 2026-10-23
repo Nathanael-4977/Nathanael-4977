@@ -39,7 +39,7 @@ I'm an engineering student specializing in Artificial Intelligence, currently su
 - 💼 **Leadership:** Current Treasurer (and former President) of my school's Sports Board (BDS). I aggressively protect the bank account so people can keep playing sports.
 - 🌌 **Offline Life:** When I'm not debugging, I'm freezing outside doing astrophotography, playing ice hockey, doing calisthenics, or practicing fingerpicking on my guitar. 
 - 🍳 **Fun Fact:** I spent a summer as a kitchen assistant in the Norwegian mountains. I can optimize neural networks *and* survive the dinner rush.
-
+<img src="https://raw.githubusercontent.com/Nathanael-4977/Nathanael-4977/main/assets/dashboard_about.svg" alt="Tableau de bord" width="100%">
 ---
 
 ## 💻 Tech Stack
