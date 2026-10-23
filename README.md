@@ -1,5 +1,15 @@
 <div align="center">
   <h1>Hi, I'm Nathanaël Bousseau 🛰️</h1>
+  
+  <!-- Effet Machine à écrire -->
+  <a href="https://git.io/typing-svg">
+    <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=500&size=20&pause=1000&color=3399FF&center=true&vCenter=true&width=500&lines=4th-Year+Engineering+Student+%40+ESAIP;Future+AI+%26+Aerospace+Engineer;President+of+the+BDS;Astrophotography+Enthusiast;Training+models+from+Earth+to+Orbit..." alt="Typing SVG" />
+  </a>
+</div>
+
+
+<div align="center">
+  <h1>Hi, I'm Nathanaël Bousseau 🛰️</h1>
   <h3>4th-Year Engineering Student @ ESAIP | Future AI Engineer</h3>
   <p>
     <i>"Training models to solve complex problems, from Earth to Orbit."</i>
