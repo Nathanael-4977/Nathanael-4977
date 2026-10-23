@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 850 300" width="850" height="300">
+  <rect width="100%" height="100%" fill="#0d1117" rx="8" />
+  <rect x="2" y="2" width="846" height="296" fill="none" stroke="#3399FF" stroke-width="1" opacity="0.3" rx="8" />
+  <rect x="15" y="15" width="820" height="270" fill="none" stroke="#3399FF" stroke-width="1" opacity="0.1" />
+  
+  <path d="M 15 15 L 250 15 L 270 45 L 15 45 Z" fill="#3399FF" opacity="0.15" />
+  <path d="M 15 45 L 835 45" stroke="#3399FF" stroke-width="1" opacity="0.5" />
+  <text x="35" y="33" fill="#3399FF" font-family="monospace" font-size="14" font-weight="bold">HUD // TECH_STACK_MODULE</text>
+  
+  <circle cx="810" cy="30" r="4" fill="#2ea043" />
+  <text x="735" y="34" fill="#8b949e" font-family="monospace" font-size="12">SYS: ONLINE</text>
+
+  <!-- AI & CORE -->
+  <rect x="40" y="70" width="150" height="22" fill="#3399FF" opacity="0.15" rx="3" />
+  <text x="48" y="86" fill="#3399FF" font-family="monospace" font-size="12" font-weight="bold">[AI_AND_CORE]</text>
+  <text x="210" y="86" fill="#c9d1d9" font-family="monospace" font-size="14">Python | C | C++ | Java | Swift</text>
+
+  <!-- WEB DEV -->
+  <rect x="40" y="120" width="150" height="22" fill="#3399FF" opacity="0.15" rx="3" />
+  <text x="48" y="136" fill="#3399FF" font-family="monospace" font-size="12" font-weight="bold">[WEB_DEV]</text>
+  <text x="210" y="136" fill="#c9d1d9" font-family="monospace" font-size="14">React | Flutter | JS/TS | Node.js | Django | Flask</text>
+
+  <!-- CLOUD & DATA -->
+  <rect x="40" y="170" width="150" height="22" fill="#3399FF" opacity="0.15" rx="3" />
+  <text x="48" y="186" fill="#3399FF" font-family="monospace" font-size="12" font-weight="bold">[CLOUD_DATA]</text>
+  <text x="210" y="186" fill="#c9d1d9" font-family="monospace" font-size="14">Docker | Kubernetes | Azure | Openstack | SQL</text>
+
+  <!-- IOT & EMBEDDED -->
+  <rect x="40" y="220" width="150" height="22" fill="#3399FF" opacity="0.15" rx="3" />
+  <text x="48" y="236" fill="#3399FF" font-family="monospace" font-size="12" font-weight="bold">[IOT_EMBEDDED]</text>
+  <text x="210" y="236" fill="#c9d1d9" font-family="monospace" font-size="14">Arduino | PlatformIO | Mosquitto | Node-RED</text>
+</svg>
