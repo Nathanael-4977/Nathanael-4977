@@ -15,28 +15,31 @@
   <a href="mailto:ton.email@example.com"><img src="https://img.shields.io/badge/Email-161b22?style=for-the-badge&logo=gmail&logoColor=3399FF&labelColor=161b22" alt="Email"></a>
 </div>
 
-<br>
+<br><br>
 
-<div align="center">
-  <img src="assets/dashboard_about.svg" alt="HUD Overview Panel" width="100%">
-</div>
-
-<br>
-
-<div align="center">
-  <img src="assets/dashboard_stack.svg" alt="HUD Tech Stack Module" width="100%">
-</div>
+<p align="center">
+  <img src="assets/dashboard_about.svg" alt="HUD Overview Panel" width="850">
+</p>
 
 <br>
 
-<div align="center">
-  <img src="assets/dashboard_projects.svg" alt="HUD Flight Log Projects" width="100%">
-</div>
+<h3 align="center">Tech Stack</h3>
+
+<p align="center">
+  <img src="assets/tech_payload.svg" alt="Tech Stack" width="850">
+</p>
 
 <br>
 
-<div align="center">
-  <h2>📊 SYSTEM TELEMETRY</h2>
+<h3 align="center">Active Missions</h3>
+
+<p align="center">
+  <img src="assets/project_1.svg" alt="DeforestAI" width="400">&nbsp;&nbsp;&nbsp;&nbsp;
+  <img src="assets/project_2.svg" alt="SupportBot" width="400">
+</p>
+
+<br>
+
+<p align="center">
   <img src="https://github-readme-stats.vercel.app/api?username=Nathanael-4977&show_icons=true&theme=transparent&hide_border=true&title_color=3399ff&icon_color=3399ff&text_color=8b949e" height="165" alt="GitHub Stats" />
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Nathanael-4977&layout=compact&theme=transparent&hide_border=true&title_color=3399ff&text_color=8b949e" height="165" alt="Top Languages" />
-</div>
+</p>
