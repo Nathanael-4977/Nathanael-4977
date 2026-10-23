@@ -1,43 +1,80 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 850 320" width="850" height="320">
-  <!-- Fond de l'interface (Dark Mode) -->
-  <rect width="100%" height="100%" fill="#0d1117" rx="8" />
+  <defs>
+    <style>
+      /* Animations de chargement séquentiel */
+      .fade-up { opacity: 0; transform: translateY(10px); animation: loadIn 0.6s ease-out forwards; }
+      .delay-1 { animation-delay: 0.2s; }
+      .delay-2 { animation-delay: 0.6s; }
+      .delay-3 { animation-delay: 1.0s; }
+      .delay-4 { animation-delay: 1.3s; }
+      .delay-5 { animation-delay: 1.6s; }
+      .delay-6 { animation-delay: 1.9s; }
+      .pulse { animation: blink 2s infinite; }
+      
+      @keyframes loadIn {
+        to { opacity: 1; transform: translateY(0); }
+      }
+      @keyframes blink {
+        0%, 100% { opacity: 1; }
+        50% { opacity: 0.3; }
+      }
+    </style>
+  </defs>
+
+  <!-- Fond de l'interface (Deep Space) -->
+  <rect width="100%" height="100%" fill="#090d13" rx="8" />
   
-  <!-- Bordures Technologiques du Dashboard -->
-  <rect x="2" y="2" width="846" height="316" fill="none" stroke="#3399FF" stroke-width="1" opacity="0.3" rx="8" />
+  <!-- Grille Spatiale et Orbite (Background) -->
+  <path d="M 0 40 L 850 40 M 0 80 L 850 80 M 0 120 L 850 120 M 0 160 L 850 160 M 0 200 L 850 200 M 0 240 L 850 240 M 0 280 L 850 280" stroke="#3399FF" stroke-width="0.5" opacity="0.05" />
+  <path d="M 40 0 L 40 320 M 120 0 L 120 320 M 200 0 L 200 320 M 280 0 L 280 320 M 360 0 L 360 320 M 440 0 L 440 320 M 520 0 L 520 320 M 600 0 L 600 320 M 680 0 L 680 320 M 760 0 L 760 320" stroke="#3399FF" stroke-width="0.5" opacity="0.05" />
+  <ellipse cx="750" cy="180" rx="300" ry="100" fill="none" stroke="#3399FF" stroke-width="1" opacity="0.1" transform="rotate(-15 750 180)" />
+  
+  <!-- Bordures Technologiques -->
+  <rect x="2" y="2" width="846" height="316" fill="none" stroke="#3399FF" stroke-width="1" opacity="0.4" rx="8" />
   <rect x="15" y="15" width="820" height="290" fill="none" stroke="#3399FF" stroke-width="1" opacity="0.1" />
   
-  <!-- En-tête du Panneau (Top HUD Header) -->
-  <path d="M 15 15 L 250 15 L 270 45 L 15 45 Z" fill="#3399FF" opacity="0.15" />
-  <path d="M 15 45 L 835 45" stroke="#3399FF" stroke-width="1" opacity="0.5" />
-  <text x="35" y="33" fill="#3399FF" font-family="monospace" font-size="14" font-weight="bold">HUD // OVERVIEW_PANEL</text>
+  <!-- En-tête du Panneau (Apparaît en premier) -->
+  <g class="fade-up delay-1">
+    <path d="M 15 15 L 250 15 L 270 45 L 15 45 Z" fill="#3399FF" opacity="0.15" />
+    <path d="M 15 45 L 835 45" stroke="#3399FF" stroke-width="1" opacity="0.5" />
+    <text x="35" y="33" fill="#3399FF" font-family="monospace" font-size="14" font-weight="bold">HUD // CREW_TELEMETRY</text>
+    
+    <!-- Statut Système Clignotant -->
+    <circle cx="810" cy="30" r="4" fill="#2ea043" class="pulse" />
+    <text x="735" y="34" fill="#8b949e" font-family="monospace" font-size="12">LINK: STABLE</text>
+  </g>
+
+  <!-- Texte Principal (Apparaît en 2e) -->
+  <g class="fade-up delay-2">
+    <text x="40" y="90" fill="#c9d1d9" font-family="sans-serif" font-size="24" font-weight="bold">Nathanaël Bousseau</text>
+    <text x="40" y="115" fill="#8b949e" font-family="sans-serif" font-size="14" font-style="italic">"Training models to solve complex problems, from Earth to Orbit."</text>
+  </g>
   
-  <!-- Statut Système -->
-  <circle cx="810" cy="30" r="4" fill="#2ea043" />
-  <text x="735" y="34" fill="#8b949e" font-family="monospace" font-size="12">SYS: ONLINE</text>
+  <!-- Education (Apparaît en 3e) -->
+  <g class="fade-up delay-3">
+    <rect x="40" y="145" width="130" height="22" fill="#3399FF" opacity="0.15" rx="3" />
+    <text x="48" y="161" fill="#3399FF" font-family="monospace" font-size="12" font-weight="bold">[BASE_STATION]</text>
+    <text x="185" y="161" fill="#c9d1d9" font-family="sans-serif" font-size="14">Engineering degree in AI. Erasmus exchange at Centria UAS (Finland).</text>
+  </g>
 
-  <!-- Texte Principal -->
-  <text x="40" y="90" fill="#c9d1d9" font-family="sans-serif" font-size="24" font-weight="bold">Nathanaël Bousseau</text>
-  <text x="40" y="115" fill="#8b949e" font-family="sans-serif" font-size="14" font-style="italic">"Training models to solve complex problems, from Earth to Orbit."</text>
-  
-  <!-- Lignes de Données (Data Rows) -->
-  
-  <!-- Education -->
-  <rect x="40" y="145" width="130" height="22" fill="#3399FF" opacity="0.15" rx="3" />
-  <text x="48" y="161" fill="#3399FF" font-family="monospace" font-size="12" font-weight="bold">[EDUCATION]</text>
-  <text x="185" y="161" fill="#c9d1d9" font-family="sans-serif" font-size="14">Engineering degree in AI. Erasmus exchange at Centria UAS (Finland).</text>
+  <!-- Leadership (Apparaît en 4e) -->
+  <g class="fade-up delay-4">
+    <rect x="40" y="185" width="130" height="22" fill="#3399FF" opacity="0.15" rx="3" />
+    <text x="48" y="201" fill="#3399FF" font-family="monospace" font-size="12" font-weight="bold">[COMMAND_ROLE]</text>
+    <text x="185" y="201" fill="#c9d1d9" font-family="sans-serif" font-size="14">Treasurer and former President of the BDS. I protect the bank account.</text>
+  </g>
 
-  <!-- Leadership -->
-  <rect x="40" y="185" width="130" height="22" fill="#3399FF" opacity="0.15" rx="3" />
-  <text x="48" y="201" fill="#3399FF" font-family="monospace" font-size="12" font-weight="bold">[LEADERSHIP]</text>
-  <text x="185" y="201" fill="#c9d1d9" font-family="sans-serif" font-size="14">Treasurer and former President of the BDS. I protect the bank account.</text>
+  <!-- Offline (Apparaît en 5e) -->
+  <g class="fade-up delay-5">
+    <rect x="40" y="225" width="130" height="22" fill="#3399FF" opacity="0.15" rx="3" />
+    <text x="48" y="241" fill="#3399FF" font-family="monospace" font-size="12" font-weight="bold">[OFF_GRID]</text>
+    <text x="185" y="241" fill="#c9d1d9" font-family="sans-serif" font-size="14">Astrophotography, ice hockey, calisthenics, fingerpicking guitar.</text>
+  </g>
 
-  <!-- Offline -->
-  <rect x="40" y="225" width="130" height="22" fill="#3399FF" opacity="0.15" rx="3" />
-  <text x="48" y="241" fill="#3399FF" font-family="monospace" font-size="12" font-weight="bold">[OFF_GRID]</text>
-  <text x="185" y="241" fill="#c9d1d9" font-family="sans-serif" font-size="14">Astrophotography, ice hockey, calisthenics, fingerpicking guitar.</text>
-
-  <!-- Stress Test -->
-  <rect x="40" y="265" width="130" height="22" fill="#3399FF" opacity="0.15" rx="3" />
-  <text x="48" y="281" fill="#3399FF" font-family="monospace" font-size="12" font-weight="bold">[STRESS_TEST]</text>
-  <text x="185" y="281" fill="#c9d1d9" font-family="sans-serif" font-size="14">Kitchen assistant in Norwegian mountains (optimizing the dinner rush).</text>
+  <!-- Stress Test (Apparaît en 6e) -->
+  <g class="fade-up delay-6">
+    <rect x="40" y="265" width="130" height="22" fill="#3399FF" opacity="0.15" rx="3" />
+    <text x="48" y="281" fill="#3399FF" font-family="monospace" font-size="12" font-weight="bold">[STRESS_TEST]</text>
+    <text x="185" y="281" fill="#c9d1d9" font-family="sans-serif" font-size="14">Kitchen assistant in Norwegian mountains (optimizing the dinner rush).</text>
+  </g>
 </svg>
