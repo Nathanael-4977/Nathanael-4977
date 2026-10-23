@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 850 140" width="850" height="140">
+  <rect width="100%" height="100%" fill="#0d1117" rx="8" />
+  <rect x="2" y="2" width="846" height="136" fill="none" stroke="#3399FF" stroke-width="1" opacity="0.3" rx="8" />
+  
+  <text x="425" y="30" fill="#3399FF" font-family="monospace" font-size="12" font-weight="bold" text-anchor="middle">PAYLOAD // TECH_STACK</text>
+  <path d="M 350 40 L 500 40" stroke="#3399FF" stroke-width="1" opacity="0.5" />
+  
+  <text x="40" y="70" fill="#c9d1d9" font-family="sans-serif" font-size="13" font-weight="bold">Core Intelligence:</text>
+  <text x="180" y="70" fill="#8b949e" font-family="monospace" font-size="12">Python • C • C++ • Java • Swift</text>
+
+  <text x="40" y="105" fill="#c9d1d9" font-family="sans-serif" font-size="13" font-weight="bold">Comms & Web:</text>
+  <text x="180" y="105" fill="#8b949e" font-family="monospace" font-size="12">React • Flutter • JS/TS • Node.js • Django</text>
+
+  <text x="490" y="70" fill="#c9d1d9" font-family="sans-serif" font-size="13" font-weight="bold">Cloud & Data:</text>
+  <text x="600" y="70" fill="#8b949e" font-family="monospace" font-size="12">Docker • K8s • SQL • Azure</text>
+
+  <text x="490" y="105" fill="#c9d1d9" font-family="sans-serif" font-size="13" font-weight="bold">Hardware & IoT:</text>
+  <text x="600" y="105" fill="#8b949e" font-family="monospace" font-size="12">Arduino • PlatformIO • Node-RED</text>
+</svg>
