@@ -1,6 +1,6 @@
-<svg fill="none" viewBox="0 0 850 320" width="850" height="320" xmlns="http://www.w3.org/2000/svg">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 850 320" width="850" height="320">
   <!-- Fond de l'interface (Dark Mode) -->
-  <rect width="850" height="320" fill="#0d1117" rx="8" />
+  <rect width="100%" height="100%" fill="#0d1117" rx="8" />
   
   <!-- Bordures Technologiques du Dashboard -->
   <rect x="2" y="2" width="846" height="316" fill="none" stroke="#3399FF" stroke-width="1" opacity="0.3" rx="8" />
@@ -9,35 +9,35 @@
   <!-- En-tête du Panneau (Top HUD Header) -->
   <path d="M 15 15 L 250 15 L 270 45 L 15 45 Z" fill="#3399FF" opacity="0.15" />
   <path d="M 15 45 L 835 45" stroke="#3399FF" stroke-width="1" opacity="0.5" />
-  <text x="35" y="33" fill="#3399FF" font-family="Courier New, monospace" font-size="14" font-weight="bold">HUD // OVERVIEW_PANEL.EXE</text>
+  <text x="35" y="33" fill="#3399FF" font-family="monospace" font-size="14" font-weight="bold">HUD // OVERVIEW_PANEL</text>
   
   <!-- Statut Système -->
   <circle cx="810" cy="30" r="4" fill="#2ea043" />
-  <text x="735" y="34" fill="#8b949e" font-family="Courier New, monospace" font-size="12">SYS: ONLINE</text>
+  <text x="735" y="34" fill="#8b949e" font-family="monospace" font-size="12">SYS: ONLINE</text>
 
   <!-- Texte Principal -->
-  <text x="40" y="90" fill="#c9d1d9" font-family="Arial, sans-serif" font-size="24" font-weight="bold">Nathanaël Bousseau</text>
-  <text x="40" y="115" fill="#8b949e" font-family="Arial, sans-serif" font-size="14" font-style="italic">"Training models to solve complex problems, from Earth to Orbit."</text>
+  <text x="40" y="90" fill="#c9d1d9" font-family="sans-serif" font-size="24" font-weight="bold">Nathanaël Bousseau</text>
+  <text x="40" y="115" fill="#8b949e" font-family="sans-serif" font-size="14" font-style="italic">"Training models to solve complex problems, from Earth to Orbit."</text>
   
   <!-- Lignes de Données (Data Rows) -->
   
   <!-- Education -->
-  <rect x="40" y="145" width="130" height="22" fill="#3399FF" opacity="0.1" rx="3" />
-  <text x="48" y="161" fill="#3399FF" font-family="Courier New, monospace" font-size="12" font-weight="bold">[EDUCATION]</text>
-  <text x="185" y="161" fill="#c9d1d9" font-family="Arial, sans-serif" font-size="14">Engineering degree in AI. Erasmus exchange at Centria UAS (Finland).</text>
+  <rect x="40" y="145" width="130" height="22" fill="#3399FF" opacity="0.15" rx="3" />
+  <text x="48" y="161" fill="#3399FF" font-family="monospace" font-size="12" font-weight="bold">[EDUCATION]</text>
+  <text x="185" y="161" fill="#c9d1d9" font-family="sans-serif" font-size="14">Engineering degree in AI. Erasmus exchange at Centria UAS (Finland).</text>
 
   <!-- Leadership -->
-  <rect x="40" y="185" width="130" height="22" fill="#3399FF" opacity="0.1" rx="3" />
-  <text x="48" y="201" fill="#3399FF" font-family="Courier New, monospace" font-size="12" font-weight="bold">[LEADERSHIP]</text>
-  <text x="185" y="201" fill="#c9d1d9" font-family="Arial, sans-serif" font-size="14">Treasurer & former President of the BDS. I protect the bank account.</text>
+  <rect x="40" y="185" width="130" height="22" fill="#3399FF" opacity="0.15" rx="3" />
+  <text x="48" y="201" fill="#3399FF" font-family="monospace" font-size="12" font-weight="bold">[LEADERSHIP]</text>
+  <text x="185" y="201" fill="#c9d1d9" font-family="sans-serif" font-size="14">Treasurer & former President of the BDS. I protect the bank account.</text>
 
   <!-- Offline -->
-  <rect x="40" y="225" width="130" height="22" fill="#3399FF" opacity="0.1" rx="3" />
-  <text x="48" y="241" fill="#3399FF" font-family="Courier New, monospace" font-size="12" font-weight="bold">[OFF_GRID]</text>
-  <text x="185" y="241" fill="#c9d1d9" font-family="Arial, sans-serif" font-size="14">Astrophotography, ice hockey, calisthenics, fingerpicking guitar.</text>
+  <rect x="40" y="225" width="130" height="22" fill="#3399FF" opacity="0.15" rx="3" />
+  <text x="48" y="241" fill="#3399FF" font-family="monospace" font-size="12" font-weight="bold">[OFF_GRID]</text>
+  <text x="185" y="241" fill="#c9d1d9" font-family="sans-serif" font-size="14">Astrophotography, ice hockey, calisthenics, fingerpicking guitar.</text>
 
   <!-- Stress Test -->
-  <rect x="40" y="265" width="130" height="22" fill="#3399FF" opacity="0.1" rx="3" />
-  <text x="48" y="281" fill="#3399FF" font-family="Courier New, monospace" font-size="12" font-weight="bold">[STRESS_TEST]</text>
-  <text x="185" y="281" fill="#c9d1d9" font-family="Arial, sans-serif" font-size="14">Kitchen assistant in Norwegian mountains (optimizing the dinner rush).</text>
+  <rect x="40" y="265" width="130" height="22" fill="#3399FF" opacity="0.15" rx="3" />
+  <text x="48" y="281" fill="#3399FF" font-family="monospace" font-size="12" font-weight="bold">[STRESS_TEST]</text>
+  <text x="185" y="281" fill="#c9d1d9" font-family="sans-serif" font-size="14">Kitchen assistant in Norwegian mountains (optimizing the dinner rush).</text>
 </svg>
