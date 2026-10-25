@@ -33,7 +33,10 @@
 
 <p align="center">
   <img src="assets/project_1.svg?v=2" alt="DeforestAI" width="400">&nbsp;&nbsp;&nbsp;&nbsp;
-  <img src="assets/project_2.svg?v=2" alt="SupportBot" width="400">
+  <a href="https://github.com/Nathanael-4977/ai-customer-support-n8n"><img src="assets/project_2.svg?v=2" alt="SupportBot" width="400"></a>
+  <br>
+  <img src="assets/button_deforest.svg?v=1" alt="Repository offline" width="400">&nbsp;&nbsp;&nbsp;&nbsp;
+  <a href="https://github.com/Nathanael-4977/ai-customer-support-n8n"><img src="assets/button_supportbot.svg?v=1" alt="Access SupportBot repository" width="400"></a>
 </p>
 
 <br>
