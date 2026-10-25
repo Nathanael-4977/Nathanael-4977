@@ -1,56 +1,92 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 850 240" width="850" height="240">
   <defs>
+    <!-- Filtre pour l'effet de lueur (Néon) -->
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+    
+    <!-- Filtre pour l'ombre portée (3D) -->
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="2" dy="4" stdDeviation="4" flood-color="#000" flood-opacity="0.15" />
+    </filter>
+
     <style>
-      .draw-line { stroke-dasharray: 1000; stroke-dashoffset: 1000; animation: draw 1.5s ease-out forwards; }
-      .fade-in { opacity: 0; animation: fadeIn 0.5s ease-out forwards; }
-      .delay-1 { animation-delay: 1.0s; }
-      .delay-2 { animation-delay: 1.2s; }
-      .delay-3 { animation-delay: 1.4s; }
-      .delay-4 { animation-delay: 1.6s; }
-      .pulse { animation: blink 2s infinite; }
+      /* Thème Sombre par défaut */
+      .bg { fill: #0d1117; }
+      .text-main { fill: #c9d1d9; }
+      .box { fill: #0d1117; stroke: #3399FF; }
       
-      @keyframes draw { to { stroke-dashoffset: 0; } }
-      @keyframes fadeIn { to { opacity: 1; } }
-      @keyframes blink { 0%, 100% { opacity: 1; } 50% { opacity: 0.4; } }
+      /* Adaptation au Thème Clair de GitHub ! */
+      @media (prefers-color-scheme: light) {
+        .bg { fill: #ffffff; }
+        .text-main { fill: #24292f; }
+        .box { fill: #f6f8fa; stroke: #3399FF; }
+      }
+
+      /* Animations */
+      .pulse { animation: blink 2s infinite; }
+      @keyframes blink { 0%, 100% { opacity: 1; filter: drop-shadow(0 0 5px #3399FF); } 50% { opacity: 0.5; filter: none; } }
     </style>
   </defs>
+
+  <!-- Fond Adaptatif (Devient blanc en Light Mode, Noir en Dark Mode) -->
+  <rect width="100%" height="100%" class="bg" rx="8" />
 
   <!-- Noyau Central (Core) -->
   <circle cx="50" cy="120" r="6" fill="#3399FF" class="pulse" />
   <circle cx="50" cy="120" r="14" fill="none" stroke="#3399FF" stroke-width="1" opacity="0.5" />
   <text x="50" y="150" fill="#3399FF" font-family="monospace" font-size="10" font-weight="bold" text-anchor="middle">CORE</text>
 
-  <!-- Lignes de circuit qui se dessinent -->
-  <path d="M 64 120 L 100 120 L 130 45 L 800 45" fill="none" stroke="#3399FF" stroke-width="1" opacity="0.3" class="draw-line" />
-  <path d="M 64 120 L 100 120 L 120 95 L 800 95" fill="none" stroke="#3399FF" stroke-width="1" opacity="0.3" class="draw-line" />
-  <path d="M 64 120 L 100 120 L 120 145 L 800 145" fill="none" stroke="#3399FF" stroke-width="1" opacity="0.3" class="draw-line" />
-  <path d="M 64 120 L 100 120 L 130 195 L 800 195" fill="none" stroke="#3399FF" stroke-width="1" opacity="0.3" class="draw-line" />
+  <!-- Lignes de circuit statiques -->
+  <path id="path1" d="M 64 120 L 100 120 L 130 45 L 800 45" fill="none" stroke="#3399FF" stroke-width="1" opacity="0.3" />
+  <path id="path2" d="M 64 120 L 100 120 L 120 95 L 800 95" fill="none" stroke="#3399FF" stroke-width="1" opacity="0.3" />
+  <path id="path3" d="M 64 120 L 100 120 L 120 145 L 800 145" fill="none" stroke="#3399FF" stroke-width="1" opacity="0.3" />
+  <path id="path4" d="M 64 120 L 100 120 L 130 195 L 800 195" fill="none" stroke="#3399FF" stroke-width="1" opacity="0.3" />
 
-  <!-- Branche 1 (AI) -->
-  <g class="fade-in delay-1">
-    <rect x="140" y="35" width="90" height="20" fill="#0d1117" stroke="#3399FF" stroke-width="1" rx="3" />
+  <!-- ANIMATION CONTINUE : Paquets de données lumineux -->
+  <!-- Flux 1 -->
+  <circle r="3" fill="#3399FF" filter="url(#glow)">
+    <animateMotion dur="3s" repeatCount="indefinite" path="M 64 120 L 100 120 L 130 45 L 800 45" />
+  </circle>
+  <!-- Flux 2 -->
+  <circle r="2" fill="#fff" filter="url(#glow)">
+    <animateMotion dur="2.5s" repeatCount="indefinite" path="M 64 120 L 100 120 L 120 95 L 800 95" />
+  </circle>
+  <!-- Flux 3 -->
+  <circle r="3" fill="#3399FF" filter="url(#glow)">
+    <animateMotion dur="4s" repeatCount="indefinite" path="M 64 120 L 100 120 L 120 145 L 800 145" />
+  </circle>
+  <!-- Flux 4 -->
+  <circle r="2" fill="#fff" filter="url(#glow)">
+    <animateMotion dur="3.5s" repeatCount="indefinite" path="M 64 120 L 100 120 L 130 195 L 800 195" />
+  </circle>
+
+  <!-- Branche 1 (AI) avec Ombre Portée -->
+  <g filter="url(#shadow)">
+    <rect x="140" y="35" width="90" height="20" class="box" stroke-width="1" rx="3" />
     <text x="185" y="49" fill="#3399FF" font-family="monospace" font-size="10" font-weight="bold" text-anchor="middle">AI_MOD</text>
-    <text x="250" y="49" fill="#c9d1d9" font-family="sans-serif" font-size="13">Python  •  C / C++  •  Java  •  Swift</text>
+    <text x="250" y="49" class="text-main" font-family="sans-serif" font-size="13">Python  •  C / C++  •  Java  •  Swift</text>
   </g>
   
   <!-- Branche 2 (Web) -->
-  <g class="fade-in delay-2">
-    <rect x="140" y="85" width="90" height="20" fill="#0d1117" stroke="#3399FF" stroke-width="1" rx="3" />
+  <g filter="url(#shadow)">
+    <rect x="140" y="85" width="90" height="20" class="box" stroke-width="1" rx="3" />
     <text x="185" y="99" fill="#3399FF" font-family="monospace" font-size="10" font-weight="bold" text-anchor="middle">WEB_DEV</text>
-    <text x="250" y="99" fill="#c9d1d9" font-family="sans-serif" font-size="13">React  •  Flutter  •  Node.js  •  Django</text>
+    <text x="250" y="99" class="text-main" font-family="sans-serif" font-size="13">React  •  Flutter  •  Node.js  •  Django</text>
   </g>
 
   <!-- Branche 3 (Cloud) -->
-  <g class="fade-in delay-3">
-    <rect x="140" y="135" width="90" height="20" fill="#0d1117" stroke="#3399FF" stroke-width="1" rx="3" />
+  <g filter="url(#shadow)">
+    <rect x="140" y="135" width="90" height="20" class="box" stroke-width="1" rx="3" />
     <text x="185" y="149" fill="#3399FF" font-family="monospace" font-size="10" font-weight="bold" text-anchor="middle">CLOUD_SYS</text>
-    <text x="250" y="149" fill="#c9d1d9" font-family="sans-serif" font-size="13">Docker  •  Kubernetes  •  Azure  •  SQL</text>
+    <text x="250" y="149" class="text-main" font-family="sans-serif" font-size="13">Docker  •  Kubernetes  •  Azure  •  SQL</text>
   </g>
 
   <!-- Branche 4 (IoT) -->
-  <g class="fade-in delay-4">
-    <rect x="140" y="185" width="90" height="20" fill="#0d1117" stroke="#3399FF" stroke-width="1" rx="3" />
+  <g filter="url(#shadow)">
+    <rect x="140" y="185" width="90" height="20" class="box" stroke-width="1" rx="3" />
     <text x="185" y="199" fill="#3399FF" font-family="monospace" font-size="10" font-weight="bold" text-anchor="middle">IOT_EMBED</text>
-    <text x="250" y="199" fill="#c9d1d9" font-family="sans-serif" font-size="13">Arduino  •  PlatformIO  •  Node-RED</text>
+    <text x="250" y="199" class="text-main" font-family="sans-serif" font-size="13">Arduino  •  PlatformIO  •  Node-RED</text>
   </g>
 </svg>
