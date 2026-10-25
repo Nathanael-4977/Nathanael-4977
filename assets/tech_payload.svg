@@ -50,7 +50,7 @@
     <animateMotion dur="3s" repeatCount="indefinite" path="M 64 120 L 100 120 L 130 45 L 800 45" />
   </circle>
   <!-- Flux 2 -->
-  <circle r="2" fill="#fff" filter="url(#glow)">
+  <circle r="2" fill="#3399FF" filter="url(#glow)">
     <animateMotion dur="2.5s" repeatCount="indefinite" path="M 64 120 L 100 120 L 120 95 L 800 95" />
   </circle>
   <!-- Flux 3 -->
@@ -58,7 +58,7 @@
     <animateMotion dur="4s" repeatCount="indefinite" path="M 64 120 L 100 120 L 120 145 L 800 145" />
   </circle>
   <!-- Flux 4 -->
-  <circle r="2" fill="#fff" filter="url(#glow)">
+  <circle r="2" fill="#3399FF" filter="url(#glow)">
     <animateMotion dur="3.5s" repeatCount="indefinite" path="M 64 120 L 100 120 L 130 195 L 800 195" />
   </circle>
 
