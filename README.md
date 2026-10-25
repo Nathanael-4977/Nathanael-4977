@@ -18,7 +18,7 @@
 <br><br>
 
 <p align="center">
-  <img src="assets/dashboard_about.svg" alt="HUD Overview Panel" width="850">
+  <img src="assets/dashboard_about.svg?v=2" alt="HUD Overview Panel" width="850">
 </p>
 
 <br>
@@ -26,7 +26,7 @@
 <h3 align="center">Tech Stack</h3>
 
 <p align="center">
-  <img src="assets/tech_payload.svg" alt="Tech Stack" width="850">
+  <img src="assets/tech_payload.svg?v=2" alt="Tech Stack" width="850">
 </p>
 
 <br>
@@ -34,8 +34,8 @@
 <h3 align="center">Active Missions</h3>
 
 <p align="center">
-  <img src="assets/project_1.svg" alt="DeforestAI" width="400">&nbsp;&nbsp;&nbsp;&nbsp;
-  <img src="assets/project_2.svg" alt="SupportBot" width="400">
+  <img src="assets/project_1.svg?v=2" alt="DeforestAI" width="400">&nbsp;&nbsp;&nbsp;&nbsp;
+  <img src="assets/project_2.svg?v=2" alt="SupportBot" width="400">
 </p>
 
 <br>
