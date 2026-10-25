@@ -11,8 +11,8 @@
   <br><br>
 
   <!-- Remplace ces liens par les tiens -->
-  <a href="https://linkedin.com/in/ton-profil"><img src="https://img.shields.io/badge/LinkedIn-161b22?style=for-the-badge&logo=linkedin&logoColor=3399FF&labelColor=161b22" alt="LinkedIn"></a>
-  <a href="mailto:ton.email@example.com"><img src="https://img.shields.io/badge/Email-161b22?style=for-the-badge&logo=gmail&logoColor=3399FF&labelColor=161b22" alt="Email"></a>
+  <a href="https://www.linkedin.com/in/nathana%C3%ABlbousseau/"><img src="https://img.shields.io/badge/LinkedIn-161b22?style=for-the-badge&logo=linkedin&logoColor=3399FF&labelColor=161b22" alt="LinkedIn"></a>
+  <a href="mailto:nathanael.bousseau@gmail.com"><img src="https://img.shields.io/badge/Email-161b22?style=for-the-badge&logo=gmail&logoColor=3399FF&labelColor=161b22" alt="Email"></a>
 </div>
 
 <br><br>
