@@ -73,7 +73,7 @@
     <text x="220" y="125" class="text-subtitle">"Training models to solve complex problems, from Earth to Orbit."</text>
     
     <!-- Tag technique -->
-    <rect x="220" y="140" width="310" height="22" fill="#3399FF" opacity="0.1" rx="4" />
+    <rect x="220" y="140" width="350" height="22" fill="#3399FF" opacity="0.1" rx="4" />
     <text x="230" y="155" class="text-code">SYS.STATUS // 4th-Year AI Engineering @ ESAIP</text>
   </g>
 </svg>
