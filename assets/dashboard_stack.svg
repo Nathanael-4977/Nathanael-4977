@@ -13,20 +13,20 @@
   <!-- AI & CORE -->
   <rect x="40" y="70" width="150" height="22" fill="#3399FF" opacity="0.15" rx="3" />
   <text x="48" y="86" fill="#3399FF" font-family="monospace" font-size="12" font-weight="bold">[AI_AND_CORE]</text>
-  <text x="210" y="86" fill="#c9d1d9" font-family="monospace" font-size="14">Python | C | C++ | Java | Swift</text>
+  <text x="210" y="86" fill="#c9d1d9" font-family="monospace" font-size="14">Python | C | C++ | Java</text>
 
   <!-- WEB DEV -->
   <rect x="40" y="120" width="150" height="22" fill="#3399FF" opacity="0.15" rx="3" />
   <text x="48" y="136" fill="#3399FF" font-family="monospace" font-size="12" font-weight="bold">[WEB_DEV]</text>
-  <text x="210" y="136" fill="#c9d1d9" font-family="monospace" font-size="14">React | Flutter | JS/TS | Node.js | Django | Flask</text>
+  <text x="210" y="136" fill="#c9d1d9" font-family="monospace" font-size="14">React | JS | Node.js | Django | Flask</text>
 
   <!-- CLOUD & DATA -->
   <rect x="40" y="170" width="150" height="22" fill="#3399FF" opacity="0.15" rx="3" />
   <text x="48" y="186" fill="#3399FF" font-family="monospace" font-size="12" font-weight="bold">[CLOUD_DATA]</text>
-  <text x="210" y="186" fill="#c9d1d9" font-family="monospace" font-size="14">Docker | Kubernetes | Azure | Openstack | SQL</text>
+  <text x="210" y="186" fill="#c9d1d9" font-family="monospace" font-size="14">Docker | SQL</text>
 
   <!-- IOT & EMBEDDED -->
   <rect x="40" y="220" width="150" height="22" fill="#3399FF" opacity="0.15" rx="3" />
   <text x="48" y="236" fill="#3399FF" font-family="monospace" font-size="12" font-weight="bold">[IOT_EMBEDDED]</text>
-  <text x="210" y="236" fill="#c9d1d9" font-family="monospace" font-size="14">Arduino | PlatformIO | Mosquitto | Node-RED</text>
+  <text x="210" y="236" fill="#c9d1d9" font-family="monospace" font-size="14">Arduino</text>
 </svg>
