@@ -96,12 +96,12 @@
   <g class="fade-up delay-5" filter="url(#shadow)">
     <rect x="40" y="225" width="130" height="22" fill="#3399FF" opacity="0.15" rx="3" />
     <text x="48" y="241" fill="#3399FF" font-family="monospace" font-size="12" font-weight="bold">[OFF_GRID]</text>
-    <text x="185" y="241" class="text-main" font-family="sans-serif" font-size="14">Astrophotography, ice hockey, calisthenics, fingerpicking guitar.</text>
+    <text x="185" y="241" class="text-main" font-family="sans-serif" font-size="14">Astrophotography, guitar, puzzles.</text>
   </g>
 
   <g class="fade-up delay-6" filter="url(#shadow)">
     <rect x="40" y="265" width="130" height="22" fill="#3399FF" opacity="0.15" rx="3" />
     <text x="48" y="281" fill="#3399FF" font-family="monospace" font-size="12" font-weight="bold">[STRESS_TEST]</text>
-    <text x="185" y="281" class="text-main" font-family="sans-serif" font-size="14">Kitchen assistant in Norwegian mountains (optimizing the dinner rush).</text>
+    <text x="185" y="281" class="text-main" font-family="sans-serif" font-size="14">Former Kitchen assistant in Norwegian mountains (optimizing the dinner rush).</text>
   </g>
 </svg>
