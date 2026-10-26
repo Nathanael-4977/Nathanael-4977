@@ -7,13 +7,17 @@
       .bg { fill: #090d13; }
       .text-main { fill: #c9d1d9; }
       .tag-bg { fill: #161b22; }
+      .cell { fill: #3399FF; opacity: 0.12; }
       @media (prefers-color-scheme: light) {
         .bg { fill: #ffffff; }
         .text-main { fill: #24292f; }
         .tag-bg { fill: #f6f8fa; stroke: #d0d7de; stroke-width: 1px; }
+        .cell { opacity: 0.18; }
       }
-      .pulse-red { animation: blinkRed 2s infinite; }
-      @keyframes blinkRed { 0%, 100% { opacity: 1; filter: drop-shadow(0 0 4px #d73a49); } 50% { opacity: 0.5; filter: none; } }
+      .pulse-amber { animation: blinkAmber 2.5s infinite; }
+      @keyframes blinkAmber { 0%, 100% { opacity: 1; filter: drop-shadow(0 0 4px #d29922); } 50% { opacity: 0.5; filter: none; } }
+      .hit { animation: hitBlink 2s infinite; }
+      @keyframes hitBlink { 0%, 100% { opacity: 1; } 50% { opacity: 0.35; } }
     </style>
   </defs>
 
@@ -21,15 +25,36 @@
   <g filter="url(#shadow)">
     <rect width="98%" height="96%" x="1%" y="1%" class="bg" stroke="#3399FF" stroke-width="1" opacity="0.9" rx="6" />
     <rect x="10" y="10" width="323" height="25" fill="#3399FF" opacity="0.1" rx="4" />
-    
-    <text x="20" y="27" fill="#3399FF" font-family="monospace" font-size="12" font-weight="bold">MISSION 01: DEFOREST_AI</text>
-    <circle cx="318" cy="22" r="4" fill="#d73a49" class="pulse-red" />
-    
-    <text x="20" y="65" class="text-main" font-family="sans-serif" font-size="13">Satellite imagery and datasets</text>
-    <text x="20" y="85" class="text-main" font-family="sans-serif" font-size="13">to detect deforestation in</text>
-    <text x="20" y="105" class="text-main" font-family="sans-serif" font-size="13">real-time.</text>
-    
+
+    <text x="20" y="27" fill="#3399FF" font-family="monospace" font-size="12" font-weight="bold">MISSION 01: NAVAL_COMBAT</text>
+    <circle cx="318" cy="22" r="4" fill="#d29922" class="pulse-amber" />
+
+    <text x="20" y="65" class="text-main" font-family="sans-serif" font-size="13">Classic Battleship game in Java,</text>
+    <text x="20" y="85" class="text-main" font-family="sans-serif" font-size="13">3-shot salvos vs the computer.</text>
+    <text x="20" y="105" class="text-main" font-family="sans-serif" font-size="13">MVC architecture, Swing, OOP.</text>
+
+    <!-- Mini grille -->
+    <g transform="translate(262, 50)">
+      <rect x="0" y="0" width="14" height="14" rx="2" class="cell" />
+      <rect x="16" y="0" width="14" height="14" rx="2" class="cell" />
+      <rect x="32" y="0" width="14" height="14" rx="2" class="cell" />
+      <rect x="48" y="0" width="14" height="14" rx="2" class="cell" />
+      <rect x="0" y="16" width="14" height="14" rx="2" fill="#3399FF" opacity="0.7" />
+      <rect x="16" y="16" width="14" height="14" rx="2" fill="#3399FF" opacity="0.7" />
+      <rect x="32" y="16" width="14" height="14" rx="2" fill="#3399FF" opacity="0.7" />
+      <rect x="48" y="16" width="14" height="14" rx="2" class="cell" />
+      <rect x="0" y="32" width="14" height="14" rx="2" class="cell" />
+      <rect x="16" y="32" width="14" height="14" rx="2" class="cell" />
+      <rect x="32" y="32" width="14" height="14" rx="2" class="cell" />
+      <rect x="48" y="32" width="14" height="14" rx="2" class="cell" />
+      <g class="hit" stroke="#ff4d4d" stroke-width="2.6" stroke-linecap="round">
+        <path d="M 19 19 L 27 27 M 27 19 L 19 27" />
+      </g>
+      <circle cx="55" cy="39" r="2" fill="#8b949e" />
+      <circle cx="7" cy="7" r="2" fill="#8b949e" />
+    </g>
+
     <rect x="20" y="125" width="303" height="22" class="tag-bg" rx="4" />
-    <text x="28" y="140" fill="#d73a49" font-family="monospace" font-size="10">STATUS: Code lost to the void</text>
+    <text x="28" y="140" fill="#d29922" font-family="monospace" font-size="10">STATUS: Playable - coursework build</text>
   </g>
 </svg>
